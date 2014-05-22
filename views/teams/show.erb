@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kickball League</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1><%= @team_name %></h1>
+    <ul>
+      <% @squad.each do |player|%>
+      <li><%= "#{player[:f_name]} #{player[:l_name]}: #{player[:position]}" %></li>
+      <% end %>
+    </ul>
+
+
+    <p></p>
+
+  </body>
+</html>

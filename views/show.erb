@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kickball League</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1>Shortstop</h1>
+
+    <ul>
+      <% @shortstop.each do |team| %>
+        <li><%= team %></li>
+      <% end %>
+    </ul>
+  </body>
+</html>

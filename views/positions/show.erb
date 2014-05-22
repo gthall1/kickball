@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kickball League</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <h1><%= @position_name %></h1>
+
+    <ul>
+      <% @position.each do |player|%>
+      <li><%= "#{player[:f_name]} #{player[:l_name]}: #{player[:team]}" %></li>
+      <% end %>
+    </ul>
+
+  </body>
+</html>
